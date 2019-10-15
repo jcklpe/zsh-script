@@ -1,5 +1,5 @@
 ##- Movement
-alias exa=exa --grid --sort=ext --group-directories-first
+alias exa='exa --grid --sort=ext --group-directories-first --icons';
 
 #  add exa auto to cd command
 function cd {
@@ -13,6 +13,10 @@ function mkcdir ()
       cd -P -- "$1"
       exa
 }
+
+# add exa to git cd
+
+
 
 
 

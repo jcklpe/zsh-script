@@ -16,3 +16,34 @@ alias git-create='git checkout -b master'
 alias git-pull-refresh='git stash && git pull'
 
 alias git-uncommit=' git reset --soft HEAD^'
+
+
+function gitcd ()
+{
+
+     giturl2dir() {
+    # forked from https://github.com/repo-utils/giturl/blob/master/lib/giturl.js
+
+    url=$1
+    # assign repo url to variable.
+    url=${url#*@}
+    # remove https
+    url=${url#*://}
+    # remove .git
+    url=${url%.git*}
+    # remove colon
+    url=${url/:/\/}
+
+    url=${url##*/}
+
+
+}
+
+giturl2dir "$1";
+
+    git clone "$1" &&
+    echo "";
+    echo "";
+    cd "$url" &&
+
+}
