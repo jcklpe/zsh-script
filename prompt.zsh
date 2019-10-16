@@ -4,7 +4,7 @@ source  ${PLUGINS}/powerlevel9k/powerlevel9k.zsh-theme
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=1
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon root_indicator dir_writable dir)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh os_icon root_indicator dir_writable dir)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status newline vcs)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
