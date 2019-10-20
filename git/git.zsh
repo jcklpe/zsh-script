@@ -44,6 +44,6 @@ giturl2dir "$1";
     git clone "$1" &&
     echo "";
     echo "";
-    cd "$url" &&
+    cd "$url";
 
 }
